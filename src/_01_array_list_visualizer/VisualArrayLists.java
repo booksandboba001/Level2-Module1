@@ -15,6 +15,25 @@ public class VisualArrayLists implements ActionListener {
 	ArrayList<String> list = new ArrayList<String>();
 
 	public void addThingsToList() {
+		list.add("I ");
+		list.add("have ");
+		list.add("kitsune/lunar tiger");
+		list.add("special");
+		list.add("powers");
+		list.add("Fuhehehe");
+		list.set(1, "I");
+		list.remove(5);
+		System.out.println(list.size());
+		if(list.contains("kitsune/lunar tiger")) {
+			System.out.println("You bet I'm a kitsune! I only found out right before my parents passed, then my powers triggered when I arrived at NRC.");
+		}
+		else {
+			System.out.println("Don't believe me? You must not have heard about NRC. Wait, does this mean I'll have to erase your memories of it?");
+		}
+		System.out.println(list.get(2));
+		list.clear();
+		System.out.println(list);
+		System.out.println(list.size());
 		// 1. Add a bunch of items to our list (4 or 5 should be enough!)
 		
 		// 2. Set one item in our list to be something different
